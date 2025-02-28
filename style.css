@@ -1,0 +1,189 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 1.2em;
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.07);
+    width: 95%;
+    max-width: 800px;
+    margin: 40px;
+}
+
+/* Header Styles */
+.header {
+    background-color: #ffb6c1; /* Light pink header */
+    color: #333;
+    padding: 20px 25px;
+    border-radius: 20px 20px 0 0;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.7em;
+    color: #333;
+}
+
+.header p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.header a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+/* New task form (input and button) */
+.new-task-form {
+    display: flex;
+    margin-bottom: 25px; /* Spacing below the form */
+}
+
+/* Input Styles */
+.new-task-form input[type="text"] {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1.1em;
+    margin-right: 10px; /* Space between the input and the button */
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+button {
+    background-color: #5cb85c; /* Green button */
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-left: 15px;
+    transition: background-color 0.3s ease;
+    min-width: 140px;
+}
+
+button:hover {
+    background-color: #449d44;
+}
+
+/* Task List Styles */
+.todo-list {
+    margin-top: 25px;
+}
+
+.todo-item {
+    background-color: #fff;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1em;
+}
+
+.todo-item:last-child {
+    border-bottom: none;
+}
+
+.task {
+    flex: 1;
+    margin-right: 15px;
+    color: #333;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+/* Checkbox Style */
+.todo-item .checkbox {
+    margin-right: 10px;
+}
+
+.todo-item .checkbox input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #fafafa;
+    border: 1px solid #cacece;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 9px;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.todo-item .checkbox input[type="checkbox"]:active {
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 0px 4px rgba(190, 190, 190, 0.2);
+}
+
+.todo-item .checkbox input[type="checkbox"]:checked {
+    background-color: #e9ecee;
+}
+
+/* Actions Styles */
+.todo-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.todo-actions a {
+    text-decoration: none;
+    color: #777;
+    font-size: 1em;
+    padding: 7px 12px;
+    border-radius: 7px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.todo-actions a:hover {
+    background-color: #f0f0f0;
+    color: #555;
+}
+
+.todo-actions a[href*="delete"] {
+    color: #d9534f; /* Red for "Delete" */
+}
+
+/* Icon Styles */
+.completed-icon {
+  margin-right: 10px; /* adding space here */
+  color: blue; /* Color for completed tasks */
+}
+
+.incomplete-icon {
+  margin-right: 10px; /* adding space here */
+  color: lightgray; /* Color for incomplete tasks */
+}
